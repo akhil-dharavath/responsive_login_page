@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+body {
+  background-color: #5d12d2;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #40089c;
+  padding: 15px 20px;
+  align-items: center;
+}
+
+nav div {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav p {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+nav h1 {
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.pinkButton {
+  background-color: #fb307e;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Login Section including Description */
+.loginWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 50px;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.description,
+.loginForm {
+  width: 35%;
+  height: 550px;
+}
+
+.description h1 {
+  font-size: 60px;
+}
+
+.description p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.loginForm {
+  background-color: white;
+  text-align: center;
+}
+
+.loginForm h1 {
+  color: #1f4172;
+  font-size: 40px;
+  margin: 40px auto;
+}
+
+input {
+  width: 70%;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 1px solid gray;
+  border-radius: 22px;
+  margin: 10px auto;
+  color: black;
+}
+
+.loginForm p,
+.loginForm label {
+  color: black;
+}
+
+.loginForm div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap !important;
+  margin: 10px 15%;
+}
+
+.loginForm div input {
+  width: 50px;
+  margin: 0px;
+}
+
+.loginForm button {
+  border: 1px none;
+  border-radius: 22px;
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 70%;
+  margin: 10px auto;
+}
+
+.signButton {
+  background-color: #5d12d2;
+  transition: all 1s;
+}
+
+.signButton:hover {
+  background-color: #300378;
+}
+
+.twitterButton {
+  background-color: rgb(60, 190, 241);
+  transition: all 1s;
+}
+
+.twitterButton:hover {
+  background-color: rgb(4, 130, 180);
+}
+
+.orWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap !important;
+}
+
+.orBorder {
+  width: 30%;
+  border: 1px solid black;
+  margin: 10px 32px !important;
+}
+
+.haveAccount {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  color: rgb(7, 181, 181);
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .description,
+  .loginForm {
+    width: 40%;
+  }
+  nav div {
+    width: 60%;
+  }
+  .loginWrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .description {
+    width: 90%;
+    height: 400px;
+  }
+  .loginForm {
+    width: 90%;
+  }
+}
+
+@media (max-width: 860px) {
+  .description h1 {
+    font-size: 50px;
+  }
+  nav div {
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  nav div {
+    width: 60%;
+    justify-content: space-evenly;
+  }
+  nav h1 {
+    font-size: 21px;
+  }
+  nav p {
+    font-size: 16px;
+  }
+  .description h1 {
+    font-size: 40px;
+  }
+  .phoneMode {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .description {
+    height: 500px;
+  }
+  input,
+  .loginForm button {
+    width: 90%;
+  }
+  .loginForm div {
+    margin: 10px 5px;
+  }
+}

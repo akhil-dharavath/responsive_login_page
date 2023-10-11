@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Startup 3</h1>
+      <div>
+        <p>Overview</p>
+        <p>Prices</p>
+        <p class="phoneMode">Blog</p>
+        <p class="phoneMode">Feedback</p>
+        <button class="pinkButton phoneMode">Purchase</button>
+      </div>
+    </nav>
+    <div class="loginWrapper">
+      <section class="description">
+        <h1>Generate Awesome Web Pages</h1>
+        <p>
+          The most important part of the Startup is the samples. The samples
+          form a set of 25 usable pages you can use as is or you can add new
+          blocks.
+        </p>
+        <button class="pinkButton">Purchase</button>
+      </section>
+      <form class="loginForm">
+        <h1>Sign Up Now</h1>
+        <input placeholder="Your Email" required type="email" />
+        <input placeholder="Your Password" required type="password"/>
+        <div>
+          <input type="checkbox" id="check" />
+          <label for="check">agree terms and conditions</label>
+        </div>
+        <button class="signButton" onclick="reset">Sign In</button>
+        <div class="orWrapper">
+          <div class="orBorder"></div>
+          <p>or</p>
+          <div class="orBorder"></div>
+        </div>
+        <button class="twitterButton">Login via Twitter</button>
+        <div class="haveAccount">
+          <p>Do you have an Account?</p>
+          <a href="#">Sign In</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
